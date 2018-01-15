@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="16dp"
+    tools:ignore="RtlHardcoded">
+
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@string/app_name"
+        tools:background="#ddd"/>
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/avatarImage"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:text="Sandra Adams"/>
+
+    <TextView
+        android:id="@+id/userCommentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameText"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/avatarImage"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at augue et dolor aliquet malesuada at ut neque."/>
+
+</RelativeLayout>
