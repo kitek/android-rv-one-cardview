@@ -72,7 +72,7 @@ class ItemsAdapter(private val items: List<Item>) : RecyclerView.Adapter<ItemsAd
 
         private fun bindOutlineProvider(itemView: View, position: Int, size: Int) {
             if (!isLollipop()) return
-            itemView.outlineProvider = if (size == 1 || position == 0) defaultOutline else fixedOutline
+            itemView.outlineProvider = if (size == 1 || position == 0 || position == size - 1) defaultOutline else fixedOutline
         }
     }
 }

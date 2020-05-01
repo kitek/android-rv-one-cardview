@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="cardElevation">2dp</dimen>
-    <dimen name="cardRadius">2dp</dimen>
+    <dimen name="cardRadius">8dp</dimen>
 </resources>
